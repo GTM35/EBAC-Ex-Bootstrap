@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lua store</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg collapse show bg-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a href="#" class="navbar-brand w-25 h-25">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/12/21/16/34/shopping-cart-1923313_1280.png"
+              class="w-50"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navegacao"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navegacao"
+          >
+            <ul class="nav navbar-nav nav-pills mt-sm-3">
+              <li class="nav-item mx-1">
+                <a href="./index.html" class="nav-link text-uppercase"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item mx-1">
+                <a href="#products" class="nav-link text-uppercase">Produtos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="col">
+          <div class="row py-3 my-5">
+            <div class="carousel slide" id="carousel-home">
+              <div class="carousel-inner">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    class="active"
+                    data-bs-target="#carousel-home"
+                    data-bs-slide-to="0"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-home"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-home"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+                <div class="carousel-item active">
+                  <img
+                    src="https://img.freepik.com/fotos-gratis/filas-de-cabides-com-roupas_23-2147669916.jpg?w=1380&t=st=1700084525~exp=1700085125~hmac=43339792dc1e0ca220dad3df8ea3dd49cd7cbf52d19a945e55b264000c21390b"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://img.freepik.com/fotos-gratis/loja-de-roupas-loja-de-roupas-em-cabide-na-boutique-loja-moderna_1150-8886.jpg?w=1380&t=st=1700084535~exp=1700085135~hmac=0c3d5491a680924a0a886896cc51aedffd1fe79aab065aa3838c7d34b73264c8"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://img.freepik.com/fotos-gratis/lindo-mercado-de-segunda-mao_23-2149353670.jpg?w=1380&t=st=1700084534~exp=1700085134~hmac=5eade2a2302a8fc75009bc01970e233c5262d0000d51e650ef78050731bf6594"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-home"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-home"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="row" data-bs-spy="scroll" data-bs-target="header">
+            <section id="products">
+              <h2 class="text-center text-decoration-underline mb-3">
+                Produtos
+              </h2>
+
+              <div class="row">
+                <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                  <div class="card m-2 text-center">
+                    <img
+                      src="https://img.freepik.com/fotos-gratis/mulher-atraente-e-elegante-e-sorridente-escolhendo-roupas-em-loja-de-roupas_285396-4642.jpg?w=1380&t=st=1700085720~exp=1700086320~hmac=ff2cebaaae913e33303d6349edebdcdb3442cc1af27a088298d344084891e51b"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title">Vestido</h3>
+                      <p class="card-text">R$ 25,00 uni.</p>
+                      <a href="#" class="btn btn-dark">Compre agora</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                  <div class="card m-2 text-center">
+                    <img
+                      src="https://img.freepik.com/fotos-gratis/renovacao-de-guarda-roupas-para-o-inverno_23-2149183913.jpg?w=1380&t=st=1700092020~exp=1700092620~hmac=f117f85e02d8021309e61a054fee45a6ee04f18c7ebfed1dfbc467152cf90d45"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h3>Jaqueta masculina</h3>
+                      <p>R$ 100,00 uni.</p>
+                      <a href="#" class="btn btn-dark">Compre agora</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                  <div class="card m-2 text-center">
+                    <img
+                      src="https://img.freepik.com/fotos-gratis/variedade-de-calcas-em-tom-bege_23-2150773368.jpg?w=1380&t=st=1700085751~exp=1700086351~hmac=927d4b5c623dd70144c1e4a67a9cc02e6b06e7ae6c1c88b007d79231cd4001a3"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h3>Calça masculina</h3>
+                      <p>R$ 250,00</p>
+                      <a href="#" class="btn btn-dark">Compre agora</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                  <div class="card m-2 text-center">
+                    <img
+                      src="https://img.freepik.com/fotos-gratis/loja-de-roupas-loja-de-roupas-em-cabide-na-boutique-loja-moderna_1150-8886.jpg?size=626&ext=jpg&ga=GA1.1.687955418.1699039293&semt=sph"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h3>Camisa de praia</h3>
+                      <p>R$ 50,00 uni.</p>
+                      <a href="#" class="btn btn-dark">Compre agora</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                  <div class="card m-2 text-center">
+                    <img
+                      src="https://img.freepik.com/fotos-gratis/conceito-de-maquete-de-camisa-com-roupas-simples_23-2149448749.jpg?w=1380&t=st=1700091462~exp=1700092062~hmac=78d05545d63d8dc08fd6a8b6a8445ec6abd910fbb0c21da6a29e4dd8e513c131"
+                      class="card-img-top w-100 d-block"
+                    />
+                    <div class="card-body">
+                      <h3>Camisetas masculina</h3>
+                      <p>R$ 25,00 uni.</p>
+                      <a href="#" class="btn btn-dark">Compre agora</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
